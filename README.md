@@ -29,6 +29,9 @@ We trained 3 models which were used in our evaluation:
 
 To use a trained model in Python, we need its model directory and the correct pretrained model ID for the tokenizer corresponding to the original pretrained model that the sentence compression model was initialised with:
 ```python
+from scrl.model import load_model
+from transformers import AutoTokenizer
+
 # model_dir = "data/models/gigaword-L8/"
 # model_dir = "data/models/newsroom-L11/"
 model_dir = "data/models/newsroom-P75/"
