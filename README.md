@@ -1,3 +1,4 @@
+
 # Sentence Compression with Reinforcement Learning
 
 
@@ -72,7 +73,7 @@ To evaluate on a custom dataset, check out [bin/evaluate.py](bin/evaluate.py) an
 
 ### Hill Climbing Baseline
 
-We implemented a search-based baseline for sentence compression using hill climbing.
+We implemented a search-based baseline for sentence compression using hill climbing, based on [Discrete Optimization for Unsupervised Sentence Summarization with Word-Level Extraction](https://arxiv.org/abs/2005.01791).  A difference to the original method is that we only restart the search if no unknown neighbour state can be found, i.e. dynamically instead of in equal-paced intervals.
 
 **Producing summaries**<br>
 The budget of search steps is controlled with `--steps`.
@@ -89,7 +90,15 @@ python bin/run_hc.py \
 
 **Evaluation** <br>
 
-Example:
+For datasets used in the paper:
+```bash
+make hc-eval-google HC_OUTPUT=data/hc-outputs/hc.L11.google.jsonl
+make hc-eval-duc2004 HC_OUTPUT=data/hc-outputs/hc.L11.duc2004.jsonl
+make hc-eval-gigaword HC_OUTPUT=data/hc-outputs/hc.L8.gigaword.jsonl
+make hc-eval-broadcast HC_OUTPUT=data/hc-outputs/hc.P75.broadcast.jsonl
+make hc-eval-bnc HC_OUTPUT=data/hc-outputs/hc.P75.nbc.jsonl
+```
+Custom:
 ```
 python bin/evaluate_hc_output.py \
     --dataset data/test-data/google.jsonl \
