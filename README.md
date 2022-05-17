@@ -16,6 +16,9 @@ The library is used for training, producing summaries with existing models and f
 `pip install -r requirements.txt` <br>
 `pip install -e .`
 
+### Data
+The full contents of the `data` folder can be found in [this google drive folder](https://drive.google.com/drive/folders/1grkgZhtdd-Bw45GAnHza9RRb5OVQG4pK?usp=sharing).
+In particular, `models` are required to use and evaluate our trained models, `train-data` to train new models, and `hc-outputs` to analyse/evaluate outputs of the hill climbing baseline.
 
 ### Using a model
 
@@ -97,7 +100,7 @@ make hc-eval-google HC_OUTPUT=data/hc-outputs/hc.L11.google.jsonl
 make hc-eval-duc2004 HC_OUTPUT=data/hc-outputs/hc.L11.duc2004.jsonl
 make hc-eval-gigaword HC_OUTPUT=data/hc-outputs/hc.L8.gigaword.jsonl
 make hc-eval-broadcast HC_OUTPUT=data/hc-outputs/hc.P75.broadcast.jsonl
-make hc-eval-bnc HC_OUTPUT=data/hc-outputs/hc.P75.nbc.jsonl
+make hc-eval-bnc HC_OUTPUT=data/hc-outputs/hc.P75.bnc.jsonl
 ```
 
 Example for custom dataset:
