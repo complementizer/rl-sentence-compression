@@ -1,6 +1,7 @@
 
 # Sentence Compression with Reinforcement Learning
 
+Code for the ACL 2022 paper *Efficient Unsupervised Sentence Compression by Fine-tuning Transformers with Reinforcement Learning*.
 
 ### Install `scrl` library
 The library is used for training, producing summaries with existing models and for evaluation and works with Python 3.7/3.8.
@@ -98,7 +99,8 @@ make hc-eval-gigaword HC_OUTPUT=data/hc-outputs/hc.L8.gigaword.jsonl
 make hc-eval-broadcast HC_OUTPUT=data/hc-outputs/hc.P75.broadcast.jsonl
 make hc-eval-bnc HC_OUTPUT=data/hc-outputs/hc.P75.nbc.jsonl
 ```
-Custom:
+
+Example for custom dataset:
 ```
 python bin/evaluate_hc_output.py \
     --dataset data/test-data/google.jsonl \
