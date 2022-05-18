@@ -1,3 +1,5 @@
+
+
 # Sentence Compression with Reinforcement Learning
 
 Code for the ACL 2022 paper [Efficient Unsupervised Sentence Compression by Fine-tuning Transformers with Reinforcement Learning](https://arxiv.org/abs/2205.08221).
@@ -110,4 +112,22 @@ Example for custom dataset:
 python bin/evaluate_hc_output.py \
     --dataset data/test-data/google.jsonl \
     --outputs data/hc-outputs/hc.L11.google.jsonl
+```
+
+### Citation
+
+⚠️ Please refer to the version of the paper on Arxiv, there is a typo in the original ACL version (Table 3, ROUGE-1 column, Gigaword-SCRL-8 row).
+
+```
+@inproceedings{ghalandari-etal-2022-efficient,
+    title = "Efficient Unsupervised Sentence Compression by Fine-tuning Transformers with Reinforcement Learning",
+    author = "Gholipour Ghalandari, Demian and Hokamp, Chris and Ifrim, Georgiana",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://arxiv.org/abs/2205.08221",
+    pages = "1267--1280",
+}
 ```
