@@ -4,6 +4,10 @@
 
 Code for the ACL 2022 paper [Efficient Unsupervised Sentence Compression by Fine-tuning Transformers with Reinforcement Learning](https://arxiv.org/abs/2205.08221).
 
+Model architecture used in this work:
+
+<img src="images/model.png" alt="drawing" width="350"/>
+
 ### Install `scrl` library
 The library is used for training, producing summaries with existing models and for evaluation and works with Python 3.7/3.8.
 
